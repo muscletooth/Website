@@ -5,6 +5,7 @@ html
     link(rel='stylesheet', href='/stylesheets/style.css')
     link(rel='stylesheet', href='/stylesheets/chunkfive-fontface.css')
   body
+    h1 Tim Rhoades
     header
       nav
         ul
@@ -16,16 +17,24 @@ html
             a(href="/contact") Contact
 
     h2 Contact Me
+    form(action='./comments.txt')
+    textarea(rows='10', cols='40')
+        | Leave a comment...
+    br
+    br
+    input(type='submit', value='Submit')
+
     section#wrapper
         block content
         footer 
           section.css-table
             section.four-column
               section.cell
-                p Mauris porttitor <br />felis eu leo aliquet<br /> ac rutrum odio aliquet
+                p I can be reached at either links below, or leave me a comment!
               section.cell
-                p Mauris porttitor <br />felis eu leo aliquet<br /> ac rutrum odio aliquet
+                a(href = "http://github.com") Github
               section.cell
-                p Mauris porttitor <br />felis eu leo aliquet<br /> ac rutrum odio aliquet
+                a(href = "http://linkedin.com") LinkedIn
               section.cell
-                p Mauris porttitor <br />felis eu leo aliquet<br /> ac rutrum odio aliquet
+                p here are some more words
+
